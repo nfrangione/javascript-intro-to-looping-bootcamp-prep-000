@@ -13,13 +13,17 @@ function forLoop(array) {
 function whileLoop(n) {
   let countdown = n;
   while (countdown > 0) {
-    console.log(--countdown);
+    console.log(countdown);
   }
   return "done";
 }
 
 function doWhileLoop(num) {
-  function maybeTrue() {
+  function incrementVariable() {
     
   }
+  do {
+    console.log ("I run once regardless.")
+  }
+  while (incrementVariable() < 5);
 }
